@@ -24,16 +24,15 @@ static __weak UIAlertView *alertView;
                message:(NSString *)message
               delegate:(id<UIAlertViewDelegate>)delegate
  additionalButtonTitle:(NSString *)additionalButtonTitle {
-    [alertView dismissWithClickedButtonIndex:0 animated:NO];
-    UIAlertView *alertViewTemp = [[UIAlertView alloc] initWithTitle:title
-                                                            message:message
-                                                           delegate:delegate
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:additionalButtonTitle, nil];
-    [alertViewTemp show];
-    alertView = alertViewTemp;
-    
-    NSLog(@"%@: %@", title, message);
+    if (logger) {
+        logger(title, message);
+    }
+}
+
+static DidDetectMemoryLeakBlock logger;
+
++ (void)setDidDetectMemoryLeakBlock:(void (^)(NSString * _Nonnull, NSString * _Nonnull))block {
+    logger = block;
 }
 
 @end

@@ -13,12 +13,17 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef void (^DidDetectMemoryLeakBlock)(NSString  * _Nonnull title, NSString * _Nonnull message);
+
 @interface MLeaksMessenger : NSObject
 
-+ (void)alertWithTitle:(NSString *)title message:(NSString *)message;
-+ (void)alertWithTitle:(NSString *)title
-               message:(NSString *)message
-              delegate:(id<UIAlertViewDelegate>)delegate
- additionalButtonTitle:(NSString *)additionalButtonTitle;
++ (void)alertWithTitle:(nullable NSString *)title message:(nullable NSString *)message;
+
++ (void)alertWithTitle:(nullable NSString *)title
+               message:(nullable NSString *)message
+              delegate:(nullable id<UIAlertViewDelegate>)delegate
+ additionalButtonTitle:(nullable NSString *)additionalButtonTitle;
+
++ (void)setDidDetectMemoryLeakBlock:(nonnull DidDetectMemoryLeakBlock)block;
 
 @end
