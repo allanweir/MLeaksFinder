@@ -12,18 +12,9 @@
 
 #import "MLeaksMessenger.h"
 
-static __weak UIAlertView *alertView;
-
 @implementation MLeaksMessenger
 
 + (void)alertWithTitle:(NSString *)title message:(NSString *)message {
-    [self alertWithTitle:title message:message delegate:nil additionalButtonTitle:nil];
-}
-
-+ (void)alertWithTitle:(NSString *)title
-               message:(NSString *)message
-              delegate:(id<UIAlertViewDelegate>)delegate
- additionalButtonTitle:(NSString *)additionalButtonTitle {
     if (logger) {
         logger(title, message);
     }

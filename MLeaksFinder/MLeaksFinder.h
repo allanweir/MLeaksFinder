@@ -1,18 +1,22 @@
-/**
- * Tencent is pleased to support the open source community by making MLeaksFinder available.
- *
- * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
- *
- * Licensed under the BSD 3-Clause License (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
- *
- * https://opensource.org/licenses/BSD-3-Clause
- *
- * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
- */
+//
+//  MLeaksFinder.h
+//  MLeaksFinder
+//
+//  Created by Nutchaphon Rewik on 20/02/2018.
+//  Copyright © 2018 zeposhe. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+//! Project version number for MLeaksFinder.
+FOUNDATION_EXPORT double MLeaksFinderVersionNumber;
+
+//! Project version string for MLeaksFinder.
+FOUNDATION_EXPORT const unsigned char MLeaksFinderVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <MLeaksFinder/PublicHeader.h>
 
 #import "NSObject+MemoryLeak.h"
-
-//#define MEMORY_LEAKS_FINDER_ENABLED 0
 
 #ifdef MEMORY_LEAKS_FINDER_ENABLED
 #define _INTERNAL_MLF_ENABLED MEMORY_LEAKS_FINDER_ENABLED
@@ -27,3 +31,16 @@
 #elif COCOAPODS
 #define _INTERNAL_MLF_RC_ENABLED COCOAPODS
 #endif
+
+#import <MLeaksFinder/MLeaksMessenger.h>
+
+#import <MLeaksFinder/UIApplication+MemoryLeak.h>
+#import <MLeaksFinder/UINavigationController+MemoryLeak.h>
+#import <MLeaksFinder/UIPageViewController+MemoryLeak.h>
+#import <MLeaksFinder/UISplitViewController+MemoryLeak.h>
+#import <MLeaksFinder/UITabBarController+MemoryLeak.h>
+#import <MLeaksFinder/UIView+MemoryLeak.h>
+#import <MLeaksFinder/UIViewController+MemoryLeak.h>
+#import <MLeaksFinder/UITouch+MemoryLeak.h>
+
+

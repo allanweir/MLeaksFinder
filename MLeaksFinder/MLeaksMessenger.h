@@ -19,11 +19,6 @@ typedef void (^DidDetectMemoryLeakBlock)(NSString  * _Nonnull title, NSString * 
 
 + (void)alertWithTitle:(nullable NSString *)title message:(nullable NSString *)message;
 
-+ (void)alertWithTitle:(nullable NSString *)title
-               message:(nullable NSString *)message
-              delegate:(nullable id<UIAlertViewDelegate>)delegate
- additionalButtonTitle:(nullable NSString *)additionalButtonTitle;
-
 + (void)setDidDetectMemoryLeakBlock:(nonnull DidDetectMemoryLeakBlock)block;
 
 @end
