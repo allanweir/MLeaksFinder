@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,7 @@
 		A00489BF203C18CE00C0E4A4 /* MLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3667E4D1D38ADF6002B55DE /* MLeakedObjectProxy.m */; };
 		A00489C0203C18CE00C0E4A4 /* MLeaksMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = B3667E701D3BA78E002B55DE /* MLeaksMessenger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A00489C1203C18CE00C0E4A4 /* MLeaksMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = B3667E711D3BA78E002B55DE /* MLeaksMessenger.m */; };
-		A00489C2203C18CE00C0E4A4 /* NSObject+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = B3ADE17B1C1BD2F000AA4F63 /* NSObject+MemoryLeak.h */; };
+		A00489C2203C18CE00C0E4A4 /* NSObject+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = B3ADE17B1C1BD2F000AA4F63 /* NSObject+MemoryLeak.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A00489C3203C18CE00C0E4A4 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = B3ADE17C1C1BD2F000AA4F63 /* NSObject+MemoryLeak.m */; };
 		A00489C4203C18CE00C0E4A4 /* UIApplication+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = B3C512C31CE3368B0032C2C8 /* UIApplication+MemoryLeak.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A00489C5203C18CE00C0E4A4 /* UIApplication+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C512C41CE3368B0032C2C8 /* UIApplication+MemoryLeak.m */; };
@@ -177,7 +177,7 @@
 				};
 			};
 			buildConfigurationList = B3ADE1671C1BD1D600AA4F63 /* Build configuration list for PBXProject "MLeaksFinder" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
