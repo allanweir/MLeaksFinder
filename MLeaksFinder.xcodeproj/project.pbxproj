@@ -29,7 +29,7 @@
 		A00489D1203C18CE00C0E4A4 /* UIViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = B3ADE17F1C1BD4B200AA4F63 /* UIViewController+MemoryLeak.m */; };
 		A00489D2203C18CE00C0E4A4 /* UITouch+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = B32AAB301D767E59001485FF /* UITouch+MemoryLeak.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A00489D3203C18CE00C0E4A4 /* UITouch+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = B32AAB311D767E59001485FF /* UITouch+MemoryLeak.m */; };
-		A00489D5203C18CE00C0E4A4 /* MLeaksFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A00489A1203C181400C0E4A4 /* MLeaksFinder.h */; };
+		A00489D5203C18CE00C0E4A4 /* MLeaksFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A00489A1203C181400C0E4A4 /* MLeaksFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
